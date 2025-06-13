@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 def load_data():
     # Replace with your actual CSV/Excel file path or data
-    df = pd.read_excel(r"C:\Users\prathamesh.b\Desktop\Vs code\Megacap_PSPB.xlsx",sheet_name= "Sheet2")  # or pd.read_excel("your_file.xlsx")
+    df = pd.read_excel("Megacap_PSPB.xlsx",sheet_name= "Sheet2")  # or pd.read_excel("your_file.xlsx")
     return df
 
 df = load_data()
