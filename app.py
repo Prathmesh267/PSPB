@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-import altair as alt
-import openpyxl
+# import altair as alt
+# import openpyxl
 # Load your data
 @st.cache_data
 def load_data():
-    df = pd.read_excel("Megacap_PSPB.xlsx", sheet_name="Sheet2",engine="openpyxl")
+    df = pd.read_excel("Megacap_PSPB.xlsx", sheet_name="Sheet2")
     return df
 
 df = load_data()
