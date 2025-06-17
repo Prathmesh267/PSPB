@@ -5,7 +5,7 @@ import openpyxl
 # Load your data
 @st.cache_data
 def load_data():
-    df = pd.read_excel("Megacap_PSPB.xlsx", sheet_name="Sheet2")
+    df = pd.read_excel("Megacap_PSPB.xlsx", sheet_name="Sheet2",engine="openpyxl")
     return df
 
 df = load_data()
